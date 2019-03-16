@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="gzero.css">
+
+  <title>RL-GammaZero</title>
+</head>
+<body>
+  <div class="jumbotron text-center barraalta">
+    <h1>Exploration-Exploitation<br>in Reinforcement Learning</h1>
+    <!-- <p>Resize this responsive page to see the effect!</p> -->
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark barra">
+    <div class="container">
+      <a class="navbar-brand" href="#">\(\gamma = 0\)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">OFU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PSRL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Asymptotic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Extensions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Section: About -->
+    <section class="my-5">
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-4 text-center text-lg-left">
+          <img class="img-fluid" src="http://alt2019.algorithmiclearningtheory.org/wp-content/uploads/sites/4/2018/07/ALT19-4k.png" alt="ALT'19">
+        </div>
+        <div class="col-lg-8">
+            <h3 class="font-weight-bold text-center">Tutorial at ALT'19</h3>
+            <h5 class="pl-2 mb-5 text-center grey-text">Regret Minimization in Infinite-Horizon Finite Markov Decision Processes</h5>
+            <p class="mx-auto mb-5">
+              Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction. A crucial step in the learning problem is to properly balance the exploration of the environment, in order to gather useful information, and the exploitation of the learned policy to collect as much reward as possible. Recent theoretical results proved that approaches based on optimism or posterior sampling (e.g., UCRL, PSRL, etc.) successfully solve the exploration-exploitation dilemma and may require exponentially less samples than simpler (but very popular) techniques such as epsilon-greedy to converge to near-optimal policies. While the optimism and posterior sampling principles are directly inspired by multi-armed bandit literature, RL poses specific challenges (e.g., how "local" uncertainty propagates through the Markov dynamics), which requires a more sophisticated theoretical analysis. The focus of the tutorial is to provide a formal definition of the exploration-exploitation dilemma, discuss its challenges, and to review the main algorithmic principles and their theoretical guarantees for different optimality criteria (notably finite-horizon and average-reward problems). Throughout the whole tutorial we will discuss open problems and possible future research directions.
+
+            </p>
+            <!-- <div class="text-center">
+            <i class="fas fa-file-pdf fa-5x"></i>
+          </div>-->
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <div class="container-fluid px-0">
+    <section id="projects" class="text-center py-5" style="background-color: #c8e6c9;">
+
+            <!-- Container -->
+            <div class="container">
+              <div class ="row">
+              <div class="col-lg-5 text-center text-lg-left">
+                <a href="#"><img class="img-fluid" src="./pics/2019_alt_cover.png" alt="slides"></a>
+              </div>
+              <div class="col-lg-7 text-center my-5">
+              <h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+              font-size: 50px;">Download the slides</h1>
+            </div>
+            </div>
+            </div>
+          </section>
+</div>
+<div class="container">
+    <!-- Section: Features v.3 -->
+    <section class="my-5">
+      <!-- Section heading -->
+      <h2 class="font-weight-bold text-center my-5">Why is it so great?</h2>
+      <!-- Section description -->
+      <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.</p>
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-lg-5 text-center text-lg-left">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-7">
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <!-- Grid column -->
+              <div class="col-1">
+                <i class="fas fa-share fa-lg"></i>
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">Safety</h5>
+                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+                  quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+              <!-- Grid row -->
+              <div class="row mb-3">
+                <!-- Grid column -->
+                <div class="col-1">
+                  <i class="fas fa-share fa-lg indigo-text"></i>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-xl-10 col-md-11 col-10">
+                  <h5 class="font-weight-bold mb-3">Technology</h5>
+                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+                    quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                <!--Grid row-->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fas fa-share fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Finance</h5>
+                    <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
+                      veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!--Grid row-->
+                </div>
+                <!--Grid column-->
+              </div>
+              <!-- Grid row -->
+            </section>
+            <!-- Section: Features v.3 -->
+          </div>
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <!-- mathJax -->
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        </body>
+        </html>
