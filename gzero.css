@@ -23,3 +23,8 @@ body {
 .grey-text {
     color: #9e9e9e!important;
 }
+
+.zoom_img:hover {
+	transform:scale(1.3);
+	transition:1s;
+}

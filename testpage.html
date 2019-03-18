@@ -36,16 +36,13 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">OFU</a>
+            <a class="nav-link" href="#slides">Slides</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PSRL</a>
+            <a class="nav-link" href="#authors">Authors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Asymptotic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Extensions</a>
+            <a class="nav-link" href="#notes">Notes</a>
           </li>
         </ul>
       </div>
@@ -54,47 +51,55 @@
 
   <div class="container">
     <!-- Section: About -->
-    <section class="my-5">
+    <section class="my-5" id="abstract">
       <div class="row">
         <!-- Grid column -->
         <div class="col-lg-4 text-center text-lg-left">
           <img class="img-fluid" src="http://alt2019.algorithmiclearningtheory.org/wp-content/uploads/sites/4/2018/07/ALT19-4k.png" alt="ALT'19">
         </div>
         <div class="col-lg-8">
-            <h3 class="font-weight-bold text-center">Tutorial at ALT'19</h3>
-            <h5 class="pl-2 mb-5 text-center grey-text">Regret Minimization in Infinite-Horizon Finite Markov Decision Processes</h5>
-            <p class="mx-auto mb-5">
-              Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction. A crucial step in the learning problem is to properly balance the exploration of the environment, in order to gather useful information, and the exploitation of the learned policy to collect as much reward as possible. Recent theoretical results proved that approaches based on optimism or posterior sampling (e.g., UCRL, PSRL, etc.) successfully solve the exploration-exploitation dilemma and may require exponentially less samples than simpler (but very popular) techniques such as epsilon-greedy to converge to near-optimal policies. While the optimism and posterior sampling principles are directly inspired by multi-armed bandit literature, RL poses specific challenges (e.g., how "local" uncertainty propagates through the Markov dynamics), which requires a more sophisticated theoretical analysis. The focus of the tutorial is to provide a formal definition of the exploration-exploitation dilemma, discuss its challenges, and to review the main algorithmic principles and their theoretical guarantees for different optimality criteria (notably finite-horizon and average-reward problems). Throughout the whole tutorial we will discuss open problems and possible future research directions.
-
-            </p>
-            <!-- <div class="text-center">
-            <i class="fas fa-file-pdf fa-5x"></i>
-          </div>-->
+          <h3 class="font-weight-bold text-center">Tutorial at ALT'19</h3>
+          <h5 class="pl-2 mb-5 text-center grey-text">Regret Minimization in Infinite-Horizon Finite Markov Decision Processes</h5>
+          <p class="mx-auto">
+            Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction. A crucial step in the learning problem is to properly balance the exploration of the environment, in order to gather useful information, and the exploitation of the learned policy to collect as much reward as possible.
+          </p>
         </div>
       </div>
+          <div class="row">
+          <div class="col-lg-12">
+          <p> Recent theoretical results proved that approaches based on optimism or posterior sampling (e.g., UCRL, PSRL, etc.) successfully solve the exploration-exploitation dilemma and may require exponentially less samples than simpler (but very popular) techniques such as epsilon-greedy to converge to near-optimal policies. While the optimism and posterior sampling principles are directly inspired by multi-armed bandit literature, RL poses specific challenges (e.g., how "local" uncertainty propagates through the Markov dynamics), which requires a more sophisticated theoretical analysis.
+          </p>
+          <p> The focus of the tutorial is to provide a formal definition of the exploration-exploitation dilemma, discuss its challenges, and to review the main algorithmic principles and their theoretical guarantees for different optimality criteria (notably finite-horizon and average-reward problems). Throughout the whole tutorial we will discuss open problems and possible future research directions.
 
-    </section>
-  </div>
-  <div class="container-fluid px-0">
-    <section id="projects" class="text-center py-5" style="background-color: #c8e6c9;">
+          </p>
+          <!-- <div class="text-center">
+          <i class="fas fa-file-pdf fa-5x"></i>
+        </div>-->
+      </div>
+    </div>
 
-            <!-- Container -->
-            <div class="container">
-              <div class ="row">
-              <div class="col-lg-5 text-center text-lg-left">
-                <a href="#"><img class="img-fluid" src="./pics/2019_alt_cover.png" alt="slides"></a>
-              </div>
-              <div class="col-lg-7 text-center my-5">
-              <h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
-              font-size: 50px;">Download the slides</h1>
-            </div>
-            </div>
-            </div>
-          </section>
+  </section>
+</div>
+<div class="container-fluid px-0">
+  <section id="slides" class="text-center py-5" style="background-color: #c8e6c9;">
+
+    <!-- Container -->
+    <div class="container">
+      <div class ="row">
+        <div class="col-md-4 text-center">
+          <a href="#"><img class="img-fluid zoom_img" src="./pics/2019_alt_cover.png" alt="slides"></a>
+        </div>
+        <div class="col-md-8 text-center my-5">
+          <a href="#"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+          font-size: 50px;">Download the slides</h1></a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="container">
-  <section class="my-5">
+  <section class="my-5" id="authors">
     <div class="row">
       <div class="col-md-4">
         <div class="avatar mx-auto white text-center">
@@ -128,136 +133,29 @@
       </div>
     </div>
   </section>
-    <section class="my-5">
-      <div class="row">
-        <div class="col-lg-5 col-xl-4">
-          <!-- Featured image -->
-                <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
-                  <img class="img-fluid" src="./pics/alazaric-200x220.jpg" alt="Sample image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-7 col-xl-8">
-                <h3 class="font-weight-bold mb-3"><strong>Alessandro Lazaric</strong></h3>
-                <p class="dark-grey-text">A. Lazaric is a research scientist at the Facebook AI Research (FAIR) lab since 2017 and he was previously a researcher at Inria in the SequeL team. His main research topic is reinforcement learning, with extensive contributions on both the theoretical and algorithmic aspects of RL. In the last ten years he has studied the exploration-exploitation dilemma both in the multi-armed bandit and reinforcement learning framework, notably on the problems of regret minimization, best-arm identification, pure exploration, and hierarchical RL.</p>
-        </div>
-        </div>
-        <hr class="my-5">
-          <div class="row">
-            <div class="col-lg-5 col-xl-4">
-              <!-- Featured image -->
-                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
-                      <img class="img-fluid" src="./pics/mpirotta-220x220.jpg" alt="Sample image">
-                      <a>
-                        <div class="mask rgba-white-slight"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-7 col-xl-8">
-                    <h3 class="font-weight-bold mb-3"><strong>Matteo Pirotta</strong></h3>
-                    <p class="dark-grey-text">M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. Previously, he was a postdoc at Inria in the SequeL team. He received his PhD in computer science from the Politecnico di Milano (Italy) in 2016.  For his doctoral thesis in reinforcement learning, he received the  Dimitris N. Chorafas Foundation Award and an honorable mention for the EurAI Distinguished Dissertation Award. His main research interest is reinforcement learning. In the last years, he has mainly focused on the exploration-exploitation dilemma in RL.</p>
-            </div>
-            </div>
-            <hr class="my-5">
-              <div class="row">
-                <div class="col-lg-5 col-xl-4">
-                  <!-- Featured image -->
-                        <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
-                          <img class="img-fluid" src="./pics/rfruit-220x220.jpg" alt="Sample image">
-                          <a>
-                            <div class="mask rgba-white-slight"></div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-lg-7 col-xl-8">
-                        <h3 class="font-weight-bold mb-3"><strong>Ronan Fruit</strong></h3>
-                        <p class="dark-grey-text">R. Fruit is a third year PhD student in the SequeL team at Inria under the supervision of Alessandro Lazaric and Daniil Ryabko. He is currently research intern at Facebook AI Research (FAIR) Montreal. His research focuses on the theoretical understanding of the exploration-exploitation dilemma in Reinforcement Learning and the design of algorithms with provably good regret guarantees.</p>
-                </div>
-                </div>
-    </section>
+</div>
+<div class="container-fluid" style="background-color: #f9fbe7">
+  <div class="container">
+  <section class="py-4" >
+    <h2 class="text-center my-5">Additional Resources</h2>
+    <div class="row">
+    <div class="col-md-10">
+      <ul>
+        <li>Proof of \(\sqrt{D}\)</li>
+        <li>Notes on error in PSRL</li>
+      </ul>
+    </div>
+    </div>
+  </section>
+</div>
+</div>
 
-    <!-- Section: Features v.3 -->
-    <section class="my-5">
-      <!-- Section heading -->
-      <h2 class="font-weight-bold text-center my-5">Why is it so great?</h2>
-      <!-- Section description -->
-      <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam.</p>
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-lg-5 text-center text-lg-left">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-lg-7">
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg"></i>
-              </div>
-              <!-- Grid column -->
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">Safety</h5>
-                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
-                  quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-              <!-- Grid row -->
-              <div class="row mb-3">
-                <!-- Grid column -->
-                <div class="col-1">
-                  <i class="fas fa-share fa-lg indigo-text"></i>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-xl-10 col-md-11 col-10">
-                  <h5 class="font-weight-bold mb-3">Technology</h5>
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
-                    quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                  </div>
-                  <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-                <!--Grid row-->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-1">
-                    <i class="fas fa-share fa-lg indigo-text"></i>
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-xl-10 col-md-11 col-10">
-                    <h5 class="font-weight-bold mb-3">Finance</h5>
-                    <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
-                      veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                    </div>
-                    <!-- Grid column -->
-                  </div>
-                  <!--Grid row-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!-- Grid row -->
-            </section>
-            <!-- Section: Features v.3 -->
-          </div>
-
-          <!-- Optional JavaScript -->
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-          <!-- mathJax -->
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-        </body>
-        </html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- mathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</body>
+</html>
