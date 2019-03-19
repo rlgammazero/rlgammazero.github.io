@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="gzero.css">
 
-  <title>RL-GammaZero</title>
+  <title>RL Gamma Zero</title>
 </head>
 <body>
   <div class="jumbotron text-center barraalta">
@@ -43,6 +43,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#notes">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#code">Code</a>
           </li>
         </ul>
       </div>
@@ -139,26 +142,43 @@
   <section class="py-4" id="notes">
     <h2 class="text-center my-5">Additional Resources</h2>
     <div class="row">
-      <div class="col-md-offset-2 col-md-4 text-center">
-        <i class="fas fa-book fa-3x cyan-text"></i>
-      <p class="mb-md-0 mb-5">Proof \(\sqrt{D}\) for UCRL2B.
+      <div class="offset-md-2 col-md-4 text-center">
+        <a href="#"><i class="fas fa-book fa-4x"></i></a>
+        <a href="#"><h5 class="my-2">UCRL2B Regret</h5></a>
+        <p class="mb-md-0 mb-5">Proof of \(\sqrt{D}\) regret for UCRL2B</p>
       </p>
       </div>
       <div class="col-md-4 text-center">
-        <i class="fas fa-book fa-3x cyan-text"></i>
-      <p class="mb-md-0 mb-5">PSRL Lemma mistake
-      </p>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-10">
-      <ul>
-        <li> Add Code</li>
-      </ul>
+        <a href="./docs/JFPL2018notesPSRL.pdf"><i class="fas fa-book fa-4x"></i></a>
+        <h5 class="my-2"><a href="./docs/JFPL2018notesPSRL.pdf">PSRL Lemma</a></h5>
+        <p class="mb-md-0 mb-5">Notes on the \(\sqrt{S}\) dependence of PSRL</p>
     </div>
     </div>
   </section>
 </div>
+</div>
+<div class="container-fluid" style="background-color: #ad581">
+  <div class="container">
+  <section class="py-4" id="code">
+    <div class="row py-5">
+    <div class="offset-md-1 col-md-6 text-center">
+      <!--<a href="#"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+      font-size: 50px;">Download the Code</h1></a>-->
+        <h3 class="font-weight-bold text-center">Online Reinforcement Learning Libray</h3>
+        <h5 class="pl-2 mb-4 text-center grey-text">Implementation of several approaches for regret minimization in reinforcement learning</h5>
+      <p class="mx-auto">
+        Python libray with cython implementation of planning algorithms
+      </p>
+      <p>
+        Library is hosted on <a href="https://github.com/RonanFR/UCRL">GitHub</a>
+      </p>
+    </div>
+      <div class="col-md-3 text-center">
+        <a href="https://github.com/RonanFR/UCRL"><i class="fab fa-github fa-9x"></i></a>
+      </div>
+    </div>
+  </section>
+  </div>
 </div>
 
 <!-- Optional JavaScript -->
