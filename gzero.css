@@ -31,3 +31,14 @@ body {
 .noteslist {
   list-style-type: none;
 }
+
+#notes a {
+  color: #f4511e;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#notes a:hover {
+  color: #dd2c00;
+  text-decoration: underline;
+}
