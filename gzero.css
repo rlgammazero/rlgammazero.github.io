@@ -33,12 +33,12 @@ body {
 }
 
 #notes a {
-  color: #f4511e;
+  color: #bf360c;
   text-decoration: none;
   background-color: transparent;
 }
 
 #notes a:hover {
-  color: #dd2c00;
+  color: #f4511e;
   text-decoration: underline;
 }
