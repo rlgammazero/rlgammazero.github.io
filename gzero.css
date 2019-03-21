@@ -15,6 +15,10 @@ body {
   font-family: 'Shadows Into Light', cursive;
   font-size: 50px;
 }
+.barraalta p {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+}
 
 .barraalta h1 {
   color: #000;
