@@ -36,7 +36,7 @@ body {
   list-style-type: none;
 }
 
-#notes a {
+/* #notes a {
   color: #bf360c;
   text-decoration: none;
   background-color: transparent;
@@ -45,4 +45,4 @@ body {
 #notes a:hover {
   color: #f4511e;
   text-decoration: underline;
-}
+} */

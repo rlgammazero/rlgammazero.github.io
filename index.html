@@ -29,11 +29,11 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90538549-2"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'UA-90538549-2');
+  gtag('config', 'UA-90538549-2');
   </script>
 </head>
 <body>
@@ -53,77 +53,77 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#slides">Resources</a>
+            <a class="nav-link" href="#resources">Resources</a>
           </li>
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#authors">Authors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#notes">Notes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#code">Code</a>
-          </li> -->
-        </ul>
+          <a class="nav-link" href="#authors">Authors</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#notes">Notes</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#code">Code</a>
+    </li> -->
+  </ul>
+</div>
+</div>
+</nav>
+
+<div class="container">
+  <!-- Section: About -->
+  <section class="my-5" id="abstract">
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-4 text-center">
+        <img class="img-fluid" src="./pics/aaai20.png" alt="AAAI'20">
+      </div>
+      <div class="col-lg-8">
+        <h3 class="font-weight-bold text-center">Tutorial at AAAI'20</h3>
+        <h4 class="pl-2 text-center grey-text">Exploration in Reinforcement Learning</h4>
+        <h6 class="pl-2 mb-5 text-center text-danger">Ghavamzadeh, Lazaric, Pirotta</h6>
+        <p class="mx-auto">
+          Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction.
+          RL algorithms recently achieved impressive results in a variety of problems including games and robotics.
+        </p>
       </div>
     </div>
-  </nav>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
 
-  <div class="container">
-    <!-- Section: About -->
-    <section class="my-5" id="abstract">
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-lg-4 text-center">
-          <img class="img-fluid" src="./pics/aaai20.png" alt="AAAI'20">
-        </div>
-        <div class="col-lg-8">
-          <h3 class="font-weight-bold text-center">Tutorial at AAAI'20</h3>
-          <h4 class="pl-2 text-center grey-text">Exploration in Reinforcement Learning</h4>
-          <h6 class="pl-2 mb-5 text-center text-danger">Ghavamzadeh, Lazaric, Pirotta</h6>
-          <p class="mx-auto">
-            Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction.
-            RL algorithms recently achieved impressive results in a variety of problems including games and robotics.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>
-
-            Nonetheless, most of recent RL algorithms require a huge amount of data to learn a satisfactory policy and cannot be used in domains where samples are expensive and/or long simulations are not possible (e.g., human-computer interaction). A fundamental step towards more sample-efficient algorithms is to devise methods to properly balance the exploration of the environment, to gather useful information, and the exploitation of the learned policy to collect as much reward as possible.
+          Nonetheless, most of recent RL algorithms require a huge amount of data to learn a satisfactory policy and cannot be used in domains where samples are expensive and/or long simulations are not possible (e.g., human-computer interaction). A fundamental step towards more sample-efficient algorithms is to devise methods to properly balance the exploration of the environment, to gather useful information, and the exploitation of the learned policy to collect as much reward as possible.
         </p>
         <p>
-            The objective of the tutorial is to bring awareness of the importance of the exploration-exploitation dilemma in improving the sample-efficiency of modern RL algorithms. The tutorial will provide the audience with a review of the major algorithmic principles (notably, optimism in face of uncertainty and posterior sampling), their theoretical guarantees in the exact case (i.e., tabular RL) and their application to more complex environments, including parameterized MDPs, linear-quadratic control, and their integration with deep learning architectures. The tutorial should provide enough theoretical and algorithmic background to enable researchers in AI and RL to integrate exploration principles in existing RL algorithms and devise novel sample-efficient RL methods able to deal with complex applications such as human-computer interaction (e.g., conversational agents), medical applications (e.g., drug optimization), and advertising (e.g., lifetime value optimization in marketing).
-            Throughout the whole tutorial, we will discuss open problems and possible future research directions.
-          </p>
-        </div>
+          The objective of the tutorial is to bring awareness of the importance of the exploration-exploitation dilemma in improving the sample-efficiency of modern RL algorithms. The tutorial will provide the audience with a review of the major algorithmic principles (notably, optimism in face of uncertainty and posterior sampling), their theoretical guarantees in the exact case (i.e., tabular RL) and their application to more complex environments, including parameterized MDPs, linear-quadratic control, and their integration with deep learning architectures. The tutorial should provide enough theoretical and algorithmic background to enable researchers in AI and RL to integrate exploration principles in existing RL algorithms and devise novel sample-efficient RL methods able to deal with complex applications such as human-computer interaction (e.g., conversational agents), medical applications (e.g., drug optimization), and advertising (e.g., lifetime value optimization in marketing).
+          Throughout the whole tutorial, we will discuss open problems and possible future research directions.
+        </p>
       </div>
+    </div>
 
-      <div class ="row text-center py-5">
-          <div class="offset-md-1 col-md-3 text-center">
-            <a href="#"><img class="img-fluid zoom_img" src="./pics/2020_aaai_cover.png" alt="slides"></a>
-          </div>
-          <div class="col-md-8 text-center">
-              <h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
-              font-size: 50px;">Download the slides</h1>
-
-                <p style="margin-bottom:0px">Introduction</p>
-                <p style="margin-bottom:0px">Regret Minimization in Tabular MDPs</p>
-                <p style="margin-bottom:0px">Exploration in Deep RL</p>
-                <p style="margin-bottom:0px">Regret Minimization in Structured MDPs</p>
-                <p style="margin-bottom:0px">Closing Remarks</p>
-          </div>
+    <div class ="row text-center py-5">
+      <div class="offset-md-1 col-md-3 text-center">
+        <a href="#"><img class="img-fluid zoom_img" src="./pics/2020_aaai_cover.png" alt="slides"></a>
       </div>
+      <div class="col-md-8 text-center">
+        <h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+        font-size: 50px;">Download the slides</h1>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <h5 class="pl-2 mb-5 text-center grey-text">If you want to cite this tutorial please use</h5>
-          <p class="mx-auto"><pre>
-            @misc{glp2020aaaitutorial,
-              author       = {Mohammad Ghavamzadeh and
-                              Alessandro Lazaric and
-                              Matteo Pirotta},
+        <p style="margin-bottom:0px">Introduction</p>
+        <p style="margin-bottom:0px">Regret Minimization in Tabular MDPs (Finite-Horizon MDPs)</p>
+        <p style="margin-bottom:0px">Exploration in Deep RL</p>
+        <p style="margin-bottom:0px">Regret Minimization in Structured MDPs (Finite-Horizon MDPs)</p>
+        <p style="margin-bottom:0px">Closing Remarks</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h5 class="pl-2 mb-5 text-center grey-text">If you want to cite this tutorial please use</h5>
+        <p class="mx-auto"><pre>
+          @misc{glp2020aaaitutorial,
+            author       = {Mohammad Ghavamzadeh and
+              Alessandro Lazaric and
+              Matteo Pirotta},
               title        = {Exploration in Reinforcement Learning},
               howpublished = {Tutorial at AAAI'20},
               year         = {2020},
@@ -137,23 +137,23 @@
   <div class="container">
     <section class="my-5" id="authors">
       <div class="row">
-      <div class="col-md-4">
-        <div class="avatar mx-auto white text-center">
-          <img src="./pics/MGhavamzadeh_200x200.jpg" class="rounded-circle img-fluid img-thumbnail">
-        </div>
-        <h5 class="font-weight-bold my-4 text-center">Mohammad Ghavamzadeh</h5>
-        <p class="grey-text mb-0"><small>
-M. Ghavamzadeh received a PhD from UMass Amherst in 2005. He was a postdoctoral fellow at UAlberta from 2005 to 2008. He has been a permanent researcher at INRIA since 2008. He was the recipient of the "INRIA award for scientific excellence" in 2011, and obtained his Habilitation in 2014. Since 2013, he has been a senior researcher, first at Adobe Research, then at DeepMind, and now at Facebook AI Research (FAIR). He has published over 70 refereed papers in major machine learning, AI, and control journals and conferences.
-        </small></p>
+        <div class="col-md-4">
+          <div class="avatar mx-auto white text-center">
+            <img src="./pics/MGhavamzadeh_200x200.jpg" class="rounded-circle img-fluid img-thumbnail">
+          </div>
+          <h5 class="font-weight-bold my-4 text-center">Mohammad Ghavamzadeh</h5>
+          <p class="grey-text mb-0"><small>
+            M. Ghavamzadeh received a PhD from UMass Amherst in 2005. He was a postdoctoral fellow at UAlberta from 2005 to 2008. He has been a permanent researcher at INRIA since 2008. He was the recipient of the "INRIA award for scientific excellence" in 2011, and obtained his Habilitation in 2014. Since 2013, he has been a senior researcher, first at Adobe Research, then at DeepMind, and now at Facebook AI Research (FAIR). He has published over 70 refereed papers in major machine learning, AI, and control journals and conferences.
+          </small></p>
 
-      </div>
+        </div>
         <div class="col-md-4">
           <div class="avatar mx-auto white text-center">
             <img src="./pics/ALazaric.jpg" class="rounded-circle img-fluid img-thumbnail">
           </div>
           <h5 class="font-weight-bold my-4 text-center">Alessandro Lazaric</h5>
           <p class="grey-text mb-0"><small>
-A. Lazaric is a research scientist at the Facebook AI Research (FAIR) lab since 2017 and he was previously a researcher at INRIA in the SequeL team. His main research topic is reinforcement learning, with extensive contributions on both the theoretical and algorithmic aspects of RL. In the last ten years, he has studied the exploration-exploitation dilemma both in the multi-armed bandit and reinforcement learning framework, notably on the problems of regret minimization, best-arm identification, pure exploration, and hierarchical RL. He has published over 40 papers in top machine learning conferences and journals.
+            A. Lazaric is a research scientist at the Facebook AI Research (FAIR) lab since 2017 and he was previously a researcher at INRIA in the SequeL team. His main research topic is reinforcement learning, with extensive contributions on both the theoretical and algorithmic aspects of RL. In the last ten years, he has studied the exploration-exploitation dilemma both in the multi-armed bandit and reinforcement learning framework, notably on the problems of regret minimization, best-arm identification, pure exploration, and hierarchical RL. He has published over 40 papers in top machine learning conferences and journals.
           </small></p>
 
         </div>
@@ -163,7 +163,7 @@ A. Lazaric is a research scientist at the Facebook AI Research (FAIR) lab since 
           </div>
           <h5 class="font-weight-bold my-4 text-center">Matteo Pirotta</h5>
           <p class="grey-text mb-0"><small>
-M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. Previously, he was a postdoc at INRIA in the SequeL team. He received his PhD in computer science from the Politecnico di Milano (Italy) in 2016.  For his doctoral thesis in reinforcement learning, he received the  Dimitris N. Chorafas Foundation Award and an honorable mention for the EurAI Distinguished Dissertation Award. His main research interest is reinforcement learning. In the last years, he has mainly focused on the exploration-exploitation dilemma in RL.
+            M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. Previously, he was a postdoc at INRIA in the SequeL team. He received his PhD in computer science from the Politecnico di Milano (Italy) in 2016.  For his doctoral thesis in reinforcement learning, he received the  Dimitris N. Chorafas Foundation Award and an honorable mention for the EurAI Distinguished Dissertation Award. His main research interest is reinforcement learning. In the last years, he has mainly focused on the exploration-exploitation dilemma in RL.
           </small></p>
 
         </div>
@@ -174,8 +174,8 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
     <section id="slides" class="text-center py-5" style="background-color: #c8e6c9;">
       <div class="row">
         <div class="col-md-12">
-        <!-- <h3 class="font-weight-bold text-center">Old Tutorials</h3> -->
-      </div>
+          <!-- <h3 class="font-weight-bold text-center">Old Tutorials</h3> -->
+        </div>
       </div>
     </section>
   </div>
@@ -208,13 +208,13 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
       </div>
     </div>
     <div class ="row text-center py-5">
-        <div class="offset-md-1 col-md-3 text-center">
-          <a href="./docs/2019_ALT_exptutorial.pdf"><img class="img-fluid zoom_img" src="./pics/2019_alt_cover.png" alt="slides"></a>
-        </div>
-        <div class="col-md-8 text-center my-5">
-            <a href="./docs/2019_ALT_exptutorial.pdf"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
-            font-size: 50px;">Download the slides</h1></a>
-        </div>
+      <div class="offset-md-1 col-md-3 text-center">
+        <a href="./docs/2019_ALT_exptutorial.pdf"><img class="img-fluid zoom_img" src="./pics/2019_alt_cover.png" alt="slides"></a>
+      </div>
+      <div class="col-md-8 text-center my-5">
+        <a href="./docs/2019_ALT_exptutorial.pdf"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+        font-size: 50px;">Download the slides</h1></a>
+      </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
@@ -222,49 +222,49 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
         <p class="mx-auto"><pre>
           @misc{flp2019alttutorial,
             author       = {Ronan Fruit and
-                            Alessandro Lazaric and
-                            Matteo Pirotta},
-            title        = {Regret Minimization in Infinite-Horizon Finite Markov Decision Processes},
-            howpublished = {Tutorial at ALT'19},
-            year         = {2019},
-            url          = {https://rlgammazero.github.io/},
-          }
-        </pre></p>
-      </div>
-    </div>
-
-  </section>
-</div>
-<!-- <div class="container-fluid px-0">
-  <section id="slides" class="text-center py-5" style="background-color: #c8e6c9;">
-
-    <div class="container">
-      <div class ="row">
-      <div class="col-md-4 text-center">
-        <a href="./docs/2019_ALT_exptutorial.pdf"><img class="img-fluid zoom_img" src="./pics/2019_alt_cover.png" alt="slides"></a>
-      </div>
-        <div class="col-md-8 text-center my-5">
-          <a href="./docs/2019_ALT_exptutorial.pdf"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
-          font-size: 50px;">Download the slides</h1></a>
+              Alessandro Lazaric and
+              Matteo Pirotta},
+              title        = {Regret Minimization in Infinite-Horizon Finite Markov Decision Processes},
+              howpublished = {Tutorial at ALT'19},
+              year         = {2019},
+              url          = {https://rlgammazero.github.io/},
+            }
+          </pre></p>
         </div>
       </div>
-    </div>
-  </section>
+
+    </section>
+  </div>
+  <!-- <div class="container-fluid px-0">
+  <section id="slides" class="text-center py-5" style="background-color: #c8e6c9;">
+
+  <div class="container">
+  <div class ="row">
+  <div class="col-md-4 text-center">
+  <a href="./docs/2019_ALT_exptutorial.pdf"><img class="img-fluid zoom_img" src="./pics/2019_alt_cover.png" alt="slides"></a>
+</div>
+<div class="col-md-8 text-center my-5">
+<a href="./docs/2019_ALT_exptutorial.pdf"><h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+font-size: 50px;">Download the slides</h1></a>
+</div>
+</div>
+</div>
+</section>
 </div> -->
 
 <div class="container">
   <section class="my-5" id="authors">
     <div class="row">
-    <div class="col-md-4">
-      <div class="avatar mx-auto white text-center">
-        <img src="./pics/rfruit-220x220.jpg" class="rounded-circle img-fluid img-thumbnail">
-      </div>
-      <h5 class="font-weight-bold my-4 text-center">Ronan Fruit</h5>
-      <p class="grey-text mb-0"><small>
-        R. Fruit is a third year PhD student in the SequeL team at Inria under the supervision of Alessandro Lazaric and Daniil Ryabko. He is currently research intern at Facebook AI Research (FAIR) Montreal. His research focuses on the theoretical understanding of the exploration-exploitation dilemma in Reinforcement Learning and the design of algorithms with provably good regret guarantees.
-      </small></p>
+      <div class="col-md-4">
+        <div class="avatar mx-auto white text-center">
+          <img src="./pics/rfruit-220x220.jpg" class="rounded-circle img-fluid img-thumbnail">
+        </div>
+        <h5 class="font-weight-bold my-4 text-center">Ronan Fruit</h5>
+        <p class="grey-text mb-0"><small>
+          R. Fruit is a third year PhD student in the SequeL team at Inria under the supervision of Alessandro Lazaric and Daniil Ryabko. He is currently research intern at Facebook AI Research (FAIR) Montreal. His research focuses on the theoretical understanding of the exploration-exploitation dilemma in Reinforcement Learning and the design of algorithms with provably good regret guarantees.
+        </small></p>
 
-    </div>
+      </div>
       <div class="col-md-4">
         <div class="avatar mx-auto white text-center">
           <img src="./pics/alazaric-200x220.jpg" class="rounded-circle img-fluid img-thumbnail">
@@ -288,82 +288,94 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
     </div>
   </section>
 </div>
-<div class="container-fluid" style="background-color: #aed581">
-  <div class="container">
-    <section class="py-4" id="notes">
-      <h2 class="text-center my-5">Resources</h2>
-        <h4 class="text-center my-5">Tutorial</h4>
+
+<div class="container-fluid px-0">
+  <section id="resources" class="text-center py-5" style="background-color: #c8e6c9;">
     <div class="row">
-    <div class="list-group col-md-12">
-  <a href="./docs/2019_ALT_exptutorial.pdf" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-          <h4>Regret Minimization in Average Reward</h4>
-          <small>April 2018</small>
+      <div class="col-md-12">
+        <h2 class="font-weight-bold text-center">Resources</h2>
       </div>
-      <p>These slides investigate the topic of regret minimization in Average Reward MDPs.</p>
-  </a>
-</div>
+    </div>
+  </section>
 </div>
 
-          <h4 class="text-center my-5">Notes</h4>
+<!-- <div class="container-fluid" style="background-color: #aed581"> -->
+<div class="container-fluid">
+  <div class="container">
+    <section class="py-4">
+      <!-- <h2 class="text-center my-5">Resources</h2> -->
+      <h4 class="text-center my-5">Tutorials</h4>
       <div class="row">
-      <div class="list-group col-md-12">
-    <a href="./docs/ucrl2b_improved.pdf" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h4>Analysis of UCRL2 with Empirical Bernstein</h4>
-            <small>April 2018</small>
-        </div>
-        <p>We show that the regret bound of UCRL2 with Empirical Bernstein inequality (UCRL2B) is of order \(\widetilde{O}(\sqrt{D\Gamma SAT})\) where \(\Gamma \leq S\) is the number of possible next states.</p>
-    </a>
-    <a href="https://arxiv.org/abs/2001.11595" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h4>Concentration Inequalities for Multinoulli Random Variables</h4>
-            <small>April 2018</small>
-        </div>
-        <p>We investigate concentration inequalities for Dirichlet and Multinomial random variables. These concentrations are used in to prove regret bounds for PSRL. We will show that (Osband and Roy, 2017, Lem. 3) for Dirichlet and (Agrawal and Jia, 2017) for Multinomial may not be correct.</p>
-    </a>
-</div>
-</div>
-      <!-- <div class="row">
-        <div class="offset-md-2 col-md-4 text-center">
-          <a href="./docs/ucrl2b_improved.pdf">
-            <i class="fas fa-book fa-4x"></i>
-            <h5 class="my-2">UCRL2B Regret</h5>
+        <div class="list-group col-md-12">
+          <a href="./docs/2019_ALT_exptutorial.pdf" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h4>Regret Minimization in Average Reward</h4>
+              <small>April 2018</small>
+            </div>
+            <p>These slides investigate the topic of regret minimization in Average Reward MDPs.</p>
           </a>
-          <p class="mb-md-0 mb-5">Proof of \(\sqrt{D}\) regret for UCRL2B</p>
-        </p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <a href="./docs/JFPL2018notesPSRL.pdf">
-          <i class="fas fa-book fa-4x"></i>
-          <h5 class="my-2">PSRL Lemma</h5>
-        </a>
-        <p class="mb-md-0 mb-5">Notes on the \(\sqrt{S}\) dependence of PSRL</p>
+
+      <h4 class="text-center my-5">Notes</h4>
+      <div class="row">
+        <div class="list-group col-md-12">
+          <a href="./docs/ucrl2b_improved.pdf" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h4>Analysis of UCRL2 with Empirical Bernstein</h4>
+              <small>April 2018</small>
+            </div>
+            <p>We show that the regret bound of UCRL2 with Empirical Bernstein inequality (UCRL2B) is of order \(\widetilde{O}(\sqrt{D\Gamma SAT})\) where \(\Gamma \leq S\) is the number of possible next states.</p>
+          </a>
+          <a href="https://arxiv.org/abs/2001.11595" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h4>Concentration Inequalities for Multinoulli Random Variables</h4>
+              <small>April 2018</small>
+            </div>
+            <p>We investigate concentration inequalities for Dirichlet and Multinomial random variables. These concentrations are used in to prove regret bounds for PSRL. We will show that (Osband and Roy, 2017, Lem. 3) for Dirichlet and (Agrawal and Jia, 2017) for Multinomial may not be correct.</p>
+          </a>
+        </div>
       </div>
-    </div> -->
-  </section>
+      <!-- <div class="row">
+      <div class="offset-md-2 col-md-4 text-center">
+      <a href="./docs/ucrl2b_improved.pdf">
+      <i class="fas fa-book fa-4x"></i>
+      <h5 class="my-2">UCRL2B Regret</h5>
+    </a>
+    <p class="mb-md-0 mb-5">Proof of \(\sqrt{D}\) regret for UCRL2B</p>
+  </p>
+</div>
+<div class="col-md-4 text-center">
+<a href="./docs/JFPL2018notesPSRL.pdf">
+<i class="fas fa-book fa-4x"></i>
+<h5 class="my-2">PSRL Lemma</h5>
+</a>
+<p class="mb-md-0 mb-5">Notes on the \(\sqrt{S}\) dependence of PSRL</p>
+</div>
+</div> -->
+</section>
 </div>
 </div>
 <!-- <div class="container-fluid" style="background-color: #ad581">
-  <div class="container">
-    <section class="py-4" id="code">
-      <div class="row py-5">
-        <div class="offset-md-1 col-md-6 text-center">
-          <h3 class="font-weight-bold text-center">Online Reinforcement Learning Library</h3>
-          <h5 class="pl-2 mb-4 text-center grey-text">Implementation of several approaches for regret minimization in reinforcement learning</h5>
-          <p class="mx-auto">
-            Python library with cython implementation of planning algorithms
-          </p>
-          <p>
-            Library is hosted on <a href="https://github.com/RonanFR/UCRL">GitHub</a>
-          </p>
-        </div>
-        <div class="col-md-3 text-center">
-          <a href="https://github.com/RonanFR/UCRL"><i class="fab fa-github fa-9x"></i></a>
-        </div>
-      </div>
-    </section>
-  </div>
+<div class="container">
+<section class="py-4" id="code">
+<div class="row py-5">
+<div class="offset-md-1 col-md-6 text-center">
+<h3 class="font-weight-bold text-center">Online Reinforcement Learning Library</h3>
+<h5 class="pl-2 mb-4 text-center grey-text">Implementation of several approaches for regret minimization in reinforcement learning</h5>
+<p class="mx-auto">
+Python library with cython implementation of planning algorithms
+</p>
+<p>
+Library is hosted on <a href="https://github.com/RonanFR/UCRL">GitHub</a>
+</p>
+</div>
+<div class="col-md-3 text-center">
+<a href="https://github.com/RonanFR/UCRL"><i class="fab fa-github fa-9x"></i></a>
+</div>
+</div>
+</section>
+</div>
 </div> -->
 
 <!-- Optional JavaScript -->
