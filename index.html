@@ -79,7 +79,8 @@
         </div>
         <div class="col-lg-8">
           <h3 class="font-weight-bold text-center">Tutorial at AAAI'20</h3>
-          <h5 class="pl-2 mb-5 text-center grey-text">Exploration in Reinforcement Learning</h5>
+          <h4 class="pl-2 text-center grey-text">Exploration in Reinforcement Learning</h4>
+          <h6 class="pl-2 mb-5 text-center text-danger">Ghavamzadeh, Lazaric, Pirotta</h6>
           <p class="mx-auto">
             Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction.
             RL algorithms recently achieved impressive results in a variety of problems including games and robotics.
@@ -187,7 +188,8 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
         </div>
         <div class="col-lg-8">
           <h3 class="font-weight-bold text-center">Tutorial at ALT'19</h3>
-          <h5 class="pl-2 mb-5 text-center grey-text">Regret Minimization in Infinite-Horizon Finite Markov Decision Processes</h5>
+          <h4 class="pl-2 text-center grey-text">Regret Minimization in Infinite-Horizon Finite Markov Decision Processes</h4>
+          <h6 class="pl-2 mb-5 text-center text-danger">Ghavamzadeh, Lazaric, Pirotta</h6>
           <p class="mx-auto">
             Reinforcement Learning (RL) studies the problem of sequential decision-making when the environment (i.e., the dynamics and the reward) is initially unknown but can be learned through direct interaction. A crucial step in the learning problem is to properly balance the exploration of the environment, in order to gather useful information, and the exploitation of the learned policy to collect as much reward as possible.
           </p>
@@ -253,6 +255,16 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
 <div class="container">
   <section class="my-5" id="authors">
     <div class="row">
+    <div class="col-md-4">
+      <div class="avatar mx-auto white text-center">
+        <img src="./pics/rfruit-220x220.jpg" class="rounded-circle img-fluid img-thumbnail">
+      </div>
+      <h5 class="font-weight-bold my-4 text-center">Ronan Fruit</h5>
+      <p class="grey-text mb-0"><small>
+        R. Fruit is a third year PhD student in the SequeL team at Inria under the supervision of Alessandro Lazaric and Daniil Ryabko. He is currently research intern at Facebook AI Research (FAIR) Montreal. His research focuses on the theoretical understanding of the exploration-exploitation dilemma in Reinforcement Learning and the design of algorithms with provably good regret guarantees.
+      </small></p>
+
+    </div>
       <div class="col-md-4">
         <div class="avatar mx-auto white text-center">
           <img src="./pics/alazaric-200x220.jpg" class="rounded-circle img-fluid img-thumbnail">
@@ -273,24 +285,46 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
         </small></p>
 
       </div>
-      <div class="col-md-4">
-        <div class="avatar mx-auto white text-center">
-          <img src="./pics/rfruit-220x220.jpg" class="rounded-circle img-fluid img-thumbnail">
-        </div>
-        <h5 class="font-weight-bold my-4 text-center">Ronan Fruit</h5>
-        <p class="grey-text mb-0"><small>
-          R. Fruit is a third year PhD student in the SequeL team at Inria under the supervision of Alessandro Lazaric and Daniil Ryabko. He is currently research intern at Facebook AI Research (FAIR) Montreal. His research focuses on the theoretical understanding of the exploration-exploitation dilemma in Reinforcement Learning and the design of algorithms with provably good regret guarantees.
-        </small></p>
-
-      </div>
     </div>
   </section>
 </div>
 <div class="container-fluid" style="background-color: #aed581">
   <div class="container">
     <section class="py-4" id="notes">
-      <h2 class="text-center my-5">Additional Resources</h2>
+      <h2 class="text-center my-5">Resources</h2>
+        <h4 class="text-center my-5">Tutorial</h4>
+    <div class="row">
+    <div class="list-group col-md-12">
+  <a href="./docs/2019_ALT_exptutorial.pdf" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+          <h4>Regret Minimization in Average Reward</h4>
+          <small>April 2018</small>
+      </div>
+      <p>These slides investigate the topic of regret minimization in Average Reward MDPs.</p>
+  </a>
+</div>
+</div>
+
+          <h4 class="text-center my-5">Notes</h4>
       <div class="row">
+      <div class="list-group col-md-12">
+    <a href="./docs/ucrl2b_improved.pdf" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h4>Analysis of UCRL2 with Empirical Bernstein</h4>
+            <small>April 2018</small>
+        </div>
+        <p>We show that the regret bound of UCRL2 with Empirical Bernstein inequality (UCRL2B) is of order \(\widetilde{O}(\sqrt{D\Gamma SAT})\) where \(\Gamma \leq S\) is the number of possible next states.</p>
+    </a>
+    <a href="https://arxiv.org/abs/2001.11595" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h4>Concentration Inequalities for Multinoulli Random Variables</h4>
+            <small>April 2018</small>
+        </div>
+        <p>We investigate concentration inequalities for Dirichlet and Multinomial random variables. These concentrations are used in to prove regret bounds for PSRL. We will show that (Osband and Roy, 2017, Lem. 3) for Dirichlet and (Agrawal and Jia, 2017) for Multinomial may not be correct.</p>
+    </a>
+</div>
+</div>
+      <!-- <div class="row">
         <div class="offset-md-2 col-md-4 text-center">
           <a href="./docs/ucrl2b_improved.pdf">
             <i class="fas fa-book fa-4x"></i>
@@ -306,7 +340,7 @@ M. Pirotta is a research scientist at Facebook AI Research (FAIR) lab in Paris. 
         </a>
         <p class="mb-md-0 mb-5">Notes on the \(\sqrt{S}\) dependence of PSRL</p>
       </div>
-    </div>
+    </div> -->
   </section>
 </div>
 </div>
