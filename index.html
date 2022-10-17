@@ -70,183 +70,70 @@
 </nav>
 
 <div class="container">
-  <section class="my-5" id="leaderboard_fh">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        Tabular MDPs - Finite Horizon
-      </div>
-    </div>
+  <!-- Section: About -->
+  <section class="my-5" id="abstract">
     <div class="row">
       <!-- Grid column -->
-      <div class="col-lg-12 text-center">
-        <table class="table table-sm table-hover text-center">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Algorithm</th>
-              <th scope="col">Regret Upper-Bound</th>
-              <th scope="col">Comments</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">UCBVI</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^3SAK} + H^3S^2A \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">UBEV</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^4SAK} + H^2S^3A^2 \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">ORLC</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^3SAK} + H^5S^2A^2 \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">EULER</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^3SAK} + H^3S^{3/2}A(\sqrt{S}+\sqrt{H}) \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">UCBMQ</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^3SAK} + H^4SA \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <th scope="row"></th>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">OptQL</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^4SAK} + H^{9/2}S^{3/2}A^{3/2} \Big)\)</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">UCB-Advantage</th>
-              <td>\(\widetilde{O}\Big( \sqrt{H^3SAK} + H^{33/4}S^2A^{3/2}K^{1/4}  \Big)\)</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-lg-4 text-center">
+        <img class="img-fluid" src="https://www.deib.polimi.it/allegati/eventi/2480/0.jpg" alt="EWRL 2022">
+      </div>
+      <div class="col-lg-8">
+        <h3 class="font-weight-bold text-center">Tutorial at EWRL 2022</h3>
+        <h4 class="pl-2 text-center grey-text">Exploration in Goal-Oriented Reinforcement Learning</h4>
+        <h6 class="pl-2 mb-5 text-center text-danger">Pirotta</h6>
+        <p class="mx-auto">
+          Goal-Oriented Reinforcement Learning formalizes the problem of finding a policy that reaches a designated goal state while minimizing the cost accumulated over time. This setting subsumes many important application scenarios, such as indoor and car navigation, trade execution, and robotic manipulation. The objective of the tutorial is to bring awareness of the importance of the exploration-exploitation dilemma in goal-oriented RL and highlight the peculiarities of this setting.
+        </p>
       </div>
     </div>
-  </div>
+    <div class ="row text-center py-5">
+      <div class="offset-md-1 col-md-3 text-center">
+        <a href="#"><img class="img-fluid zoom_img" src="./pics/2022_ewrl_cover.png" alt="slides"></a>
+      </div>
+      <div class="col-md-8 text-center">
+        <h1 style="color: #1b5e20; font-family: 'Shadows Into Light', cursive;
+        font-size: 50px;">Download the slides</h1>
+
+        <p style="margin-bottom:0px"><a href='./docs/2022_EWRL_tut_part0.pdf'>Part 0 - Introduction</a></p>
+        <!-- <p style="margin-bottom:0px"><a href='./docs/2022_EWRL_tut_part1.pdf'>Part 1 - Tabular MDPs</a></p> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h5 class="pl-2 mb-5 text-center grey-text">If you want to cite this tutorial please use</h5>
+        <p class="mx-auto"><pre>
+          @misc{p2022ewrltutorial,
+              author       = {Matteo Pirotta},
+              title        = {Exploration in Goal-Oriented Reinforcement Learning},
+              howpublished = {Tutorial at EWRL 2022},
+              year         = {2022},
+              url          = {https://rlgammazero.github.io/},
+            }
+          </pre>
+        </p>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="container">
-  <section class="my-5" id="leaderboard_fh">
+  <section class="my-5" id="authors">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        Tabular MDPs - Average Reward
+      <div class="offset-md-4 col-md-4">
+        <div class="avatar mx-auto white text-center">
+          <img src="./pics/mpirotta-220x220.jpg" class="rounded-circle img-thumbnail">
+        </div>
+        <h5 class="font-weight-bold my-4 text-center">Matteo Pirotta</h5>
+        <p class="grey-text mb-0"><small>
+          M. Pirotta is a research scientist at META in Paris. Previously, he was a postdoc at Inria in the SequeL team. He received his PhD in computer science from the Politecnico di Milano (Italy) in 2016.  For his doctoral thesis in reinforcement learning, he received the  Dimitris N. Chorafas Foundation Award and an honorable mention for the EurAI Distinguished Dissertation Award. His main research interest is reinforcement learning. In the last years, he has mainly focused on the exploration-exploitation dilemma in RL.
+        </small></p>
       </div>
     </div>
-    <div class="row">
-      <!-- Grid column -->
-      <div class="col-lg-12 text-center">
-        <table class="table table-sm table-hover text-center">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Algorithm</th>
-              <th scope="col">Regret Upper-Bound</th>
-              <th scope="col">Comments</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">UCRL2</th>
-              <td>\(\widetilde{O}\Big(DS\sqrt{AT} \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">REGAL</th>
-              <td>\(\widetilde{O}\Big( CS \sqrt{AT} \Big)\)</td>
-              <th scope="row">weakly-communicating</th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">OSP</th>
-              <td>\(\widetilde{O}\Big( \sqrt{t_{\mathrm{mix}}SAT} \Big)\)</td>
-              <th scope="row">ergodic, no efficient impl.</th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">SCAL</th>
-              <td>\(\widetilde{O}\Big( C\sqrt{S\Gamma AT} \Big)\)</td>
-              <th scope="row">weakly-communicating</th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">TUCRL</th>
-              <td>\(\widetilde{O}\Big( D^{c}\sqrt{S^c\Gamma^c AT} \Big)\)</td>
-              <th scope="row">non-communicating</th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">KL-UCRL</th>
-              <td>\(\widetilde{O}\Big( \sqrt{S \sum_{s,a} \mathbb{V}^\star_{sa} T} \Big)\)</td>
-              <th scope="row"></th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">UCRL2B</th>
-              <td>\(\widetilde{O}\Big( \sqrt{DS\Gamma AT} \Big)\)</td>
-              <th scope="row">communicating</th>
-            </tr>
-            <tr>
-              <th scope="row">model-based</th>
-              <th scope="row">EBF</th>
-              <td>\(\widetilde{O}\Big( \sqrt{DSAT} \Big)\)</td>
-              <th scope="row">weakly-communicating, no efficient impl.</th>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <th scope="row"></th>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">POLITEX</th>
-              <td>\(\widetilde{O}\Big( t_{\mathrm{mix}}^3t_{\mathrm{hit}} \sqrt{SA} T^{3/4} \Big)\)</td>
-              <td>ergodic</td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">OptQL</th>
-              <td>\(\widetilde{O}\Big( C (SA)^{1/3} T^{2/3}  \Big)\)</td>
-              <td>weakly-communicating, expected regret</td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">MDP-OOMD</th>
-              <td>\(\widetilde{O}\Big( \sqrt{t_{\mathrm{mix}} \rho AT} \Big)\)</td>
-              <td>ergodic, expected regret</td>
-            </tr>
-            <tr>
-              <th scope="row">model-free</th>
-              <th scope="row">AAPI</th>
-              <td>\(\widetilde{O}\Big( t_{\mathrm{mix}}^2(\rho \widetilde{C})^2 T^{2/3} \Big)\)</td>
-              <td>ergodic</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+  </section>
 </div>
+
+
 <div class="container-fluid px-0">
   <section id="slides" class="text-center py-5" style="background-color: #c8e6c9;">
     <div class="row">
@@ -317,11 +204,12 @@
               year         = {2020},
               url          = {https://rlgammazero.github.io/},
             }
-          </pre></p>
-        </div>
+          </pre>
+        </p>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
   <div class="container">
     <section class="my-5" id="authors">
       <div class="row">
